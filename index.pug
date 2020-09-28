@@ -1,0 +1,11 @@
+doctype html
+head
+	title="JHK's link repository"
+	link(href="style.css" rel="stylesheet")
+body
+	h2 JHK's link repository
+	each i in a
+		- var nr=a.indexOf(i)+1
+		li(id=nr)
+			a(href="#"+nr): span.nr=nr
+			a(href=i): span=i
